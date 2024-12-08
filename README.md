@@ -59,7 +59,7 @@ The easiest way to test is by using Qemu directly with the ipxe kernel image.
 
 `apk add qemu-system-x86_64 alpine-ipxe`
 
-`qemu-system-x86_64 -m 512M -enable-kvm -kernel /usr/share/alpine-ipxe/ipxe.lkrn -curses`
+`qemu-system-x86_64 -m 512M -enable-kvm -kernel /usr/share/alpine-ipxe/ipxe.lkrn -display curses`
 
 **NOTE**: you need a minimum of 256M of memory to boot alpine in network mode
 due to the size of our initramfs and modloop (kernel modules).
